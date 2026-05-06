@@ -1,0 +1,28 @@
+body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex; flex-direction: column; align-items: center;
+}
+
+.login-container {
+    margin-top: 100px;
+    background: #333;
+    padding: 20px;
+    border: 4px solid #000;
+}
+
+input { display: block; margin: 10px 0; padding: 10px; width: 200px; }
+
+button {
+    background-color: #55a02a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover { background-color: #3e751e; }
+
+.shop { display: flex; gap: 20px; margin-top: 50px; }
+.item-card { background: #444; padding: 20px; border: 2px solid #555; text-align: center; }

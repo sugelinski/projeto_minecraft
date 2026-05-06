@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <title>Loja de Itens</title>
+</head>
+<body>
+    <header>
+        <span>Bem-vindo, {{ user }}!</span>
+        <a href="/logout">Sair</a>
+    </header>
+    <main class="shop">
+        <div class="item-card">
+            <img src="https://via.placeholder.com/100" alt="Diamante">
+            <h3>Diamante x64</h3>
+            <p>R$ 10,00</p>
+            <button onclick="comprar('Diamante')">Comprar</button>
+        </div>
+        <div class="item-card">
+            <h3>VIP MVP+</h3>
+            <p>R$ 50,00</p>
+            <button onclick="comprar('VIP')">Comprar</button>
+        </div>
+    </main>
+    <script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+</body>
+</html>
